@@ -1,4 +1,4 @@
--- LEALTAD-BANKING CONFIG
+-- VB-BANKING CONFIG
 
 Config = {}
 
