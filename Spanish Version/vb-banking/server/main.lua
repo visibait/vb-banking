@@ -23,7 +23,7 @@ AddEventHandler('vb-banking:server:depositvb', function(amount, inMenu)
 			_char.showNotification("Has ingresado $"..amount)
 		end
 	else
-		DropPlayer(_src, "Te Pillé! Nospera, a la calle. [Lealtad-Banking] NUI_Devtools Infinite Money Exploit was Detected.")
+		DropPlayer(_src, "El jugador ha intentado depositar dinero en el banco sin estar cerca de uno.")
 	end
 end)
 
@@ -37,14 +37,14 @@ AddEventHandler('vb-banking:server:withdrawvb', function(amount, inMenu)
 	if inMenu then
 		Citizen.Wait(100)
 		if amount == nil or amount <= 0 or amount > _base then
-			TriggerClientEvent('chatMessage', _src, "Cantidad Invalida")
+			TriggerClientEvent('chatMessage', _src, "Cantidad Inválida")
 		else
 			_char.removeAccountMoney('bank', amount)
 			_char.addMoney(amount)
 			_char.showNotification("Has retirado $"..amount)
 		end
 	else
-		DropPlayer(_src, "Te Pillé! Nospera, a la calle. [Lealtad-Banking] NUI_Devtools Infinite Money Exploit was Detected.")
+		DropPlayer(_src, "El jugador ha intentado sacar dinero del banco sin estar cerca de uno.")
 	end
 end)
 
@@ -56,7 +56,7 @@ AddEventHandler('vb-banking:server:balance', function(inMenu)
 		local balance = _char.getAccount('bank').money
 		TriggerClientEvent('vb-banking:client:refreshbalance', _src, balance)
 	else
-		DropPlayer(_src, "Te Pillé! Nospera, a la calle. [Lealtad-Banking] NUI_Devtools Infinite Money Exploit was Detected.")
+		DropPlayer(_src, "El jugador ha intentado llamar a un evento del banco sin estar cerca de uno.")
 	end
 end)
 
@@ -85,6 +85,6 @@ AddEventHandler('vb-banking:server:transfervb', function(to, amountt, inMenu)
 			TriggerClientEvent('chatMessage', _source, "That Wallet ID is invalid or doesn't exist")
 		end
 	else
-		DropPlayer(_source, "Te Pillé! Nospera, a la calle. [Lealtad-Banking] NUI_Devtools Infinite Money Exploit was Detected.")
+		DropPlayer(_source, "El jugador ha intentado sacare transferir dinero del banco sin estar cerca de uno.")
 	end
 end)
