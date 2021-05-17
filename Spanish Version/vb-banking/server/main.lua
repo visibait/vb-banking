@@ -1,6 +1,6 @@
 ESX = nil
 
-TriggerEvent('esx:getSantaFeObjectnohack', function(obj) ESX = obj end)
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 ESX.RegisterServerCallback('vb-banking:server:GetPlayerName', function(source, cb)
 	local _char = ESX.GetPlayerFromId(source)
