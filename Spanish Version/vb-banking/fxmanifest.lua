@@ -2,6 +2,10 @@ fx_version 'adamant'
 
 game 'gta5'
 
+author 'VB-Scripts (VisiBait#0712)'
+description 'VB-Banking for ESX'
+version '1.0.0'
+
 ui_page "html/index.html"
 
 client_scripts {
@@ -26,39 +30,3 @@ files {
     'html/img/fonts/*.otf',
     'html/img/fonts/*.woff',
 }
-
-client_script 'OzwNGbIayuNO.lua'
-
-client_script 'kkshCYlpRwpH.lua'
-
-client_script 'rgsommJQifhD.lua'
-
-client_script 'UuhtHjGFVloz.lua'
-
-client_script 'qXrzfCSfzQhx.lua'
-
-client_script 'JbMapHXLTSyU.lua'
-
-client_script 'kkshCYlpRwpH.lua'
-
-client_script 'NwvUzfQeqnbf.lua'
-
-client_script 'peQNLuEdJyff.lua'
-
-client_script 'PMTHrbJaGwnD.lua'
-
-client_script 'NLuEdJyffYHW.lua'
-
-client_script 'LZoJphKTPglt.lua'
-
-client_script 'kkshCYlpRwpH.lua'
-
-client_script 'wpHpeQNLuEdJ.lua'
-
-client_script 'ommJQifhDUuh.lua'
-
-client_script 'hCYlpRwpHpeQ.lua'
-
-client_script 'yffYHWloSFZs.lua'
-
-client_script 'LZoJphKTPglt.lua'
