@@ -10,6 +10,8 @@ Resmon: ~0.01 ms.
 
 Modern UI, coded in HTML, JS & CSS
 
+vRP version coded by ToXicGlo
+
 This script is not a licensed product. I do not claim ownership of any brand or image/logo used. Copyrights and/or trademarks of any character and/or image used belong to their respective owners and are not being sold.
 
 ©VisiBait 2021
