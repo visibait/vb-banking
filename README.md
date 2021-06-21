@@ -1,3 +1,5 @@
+# >>> FRENCH VERSION <<<
+
 # VB-Banking: Banking script based off New_Banking by VisiBait#0712
  
 ## About the Project - Preview
