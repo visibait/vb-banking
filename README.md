@@ -4,6 +4,8 @@
 - Change some imgs
 - Add ATM blips
 
+![image](https://user-images.githubusercontent.com/23090309/122813587-663ae400-d2d3-11eb-8715-6e4bd08aa088.png)
+
 # VB-Banking: Banking script based off New_Banking by VisiBait#0712
  
 ## About the Project - Preview
