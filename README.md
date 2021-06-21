@@ -1,4 +1,8 @@
 # >>> FRENCH VERSION <<<
+## Translate + others
+- Translate
+- Change some imgs
+- Add ATM blips
 
 # VB-Banking: Banking script based off New_Banking by VisiBait#0712
  
