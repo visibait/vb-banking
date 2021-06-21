@@ -7,6 +7,8 @@
 ![image](https://user-images.githubusercontent.com/23090309/122813587-663ae400-d2d3-11eb-8715-6e4bd08aa088.png)
 ![image](https://user-images.githubusercontent.com/23090309/122813807-ab5f1600-d2d3-11eb-803e-f9e9a7c00981.png)
 ![image](https://user-images.githubusercontent.com/23090309/122813848-bca82280-d2d3-11eb-95e9-eed7ff8ef6c3.png)
+![image](https://user-images.githubusercontent.com/23090309/122814341-57086600-d2d4-11eb-8fce-b4e41c142868.png)
+![image](https://user-images.githubusercontent.com/23090309/122814319-4c4dd100-d2d4-11eb-98d3-8c3e476796cf.png)
 
 # VB-Banking: Banking script based off New_Banking by VisiBait#0712
  
