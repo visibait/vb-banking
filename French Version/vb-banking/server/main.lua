@@ -15,11 +15,11 @@ AddEventHandler('vb-banking:server:depositvb', function(amount, inMenu)
 	amount = tonumber(amount)
 	Citizen.Wait(50)
 	if amount == nil or amount <= 0 or amount > _char.getMoney() then
-		TriggerClientEvent('chatMessage', _src, "Invalid Quantity.")
+		TriggerClientEvent('chatMessage', _src, "Mauvais montant.")
 	else
 		_char.removeMoney(amount)
 		_char.addAccountMoney('bank', tonumber(amount))
-		_char.showNotification("You've deposited  $"..amount)
+		_char.showNotification("Vous avez déposé  $"..amount)
 	end
 end)
 
@@ -36,7 +36,7 @@ AddEventHandler('vb-banking:server:withdrawvb', function(amount, inMenu)
 	else
 		_char.removeAccountMoney('bank', amount)
 		_char.addMoney(amount)
-		_char.showNotification("You've withdrawn $"..amount)
+		_char.showNotification("Vous avez retiré $"..amount)
 	end
 end)
 
@@ -57,18 +57,18 @@ AddEventHandler('vb-banking:server:transfervb', function(to, amountt, inMenu)
 	if zPlayer ~= nil then
 		balance = xPlayer.getAccount('bank').money
 		if tonumber(_source) == tonumber(to) then
-			TriggerClientEvent('chatMessage', _source, "You can't transfer money to yourself")	
+			TriggerClientEvent('chatMessage', _source, "Vous ne pouvez pas transferer de l'argent à vous même !")	
 		else
 			if balance <= 0 or balance < tonumber(amountt) or tonumber(amountt) <= 0 then
-				TriggerClientEvent('chatMessage', _source, "You don't have enough money in your bank account.")
+				TriggerClientEvent('chatMessage', _source, "Vous n'avez pas assez d'argent sur votre compte")
 			else
 				xPlayer.removeAccountMoney('bank', tonumber(amountt))
 				zPlayer.addAccountMoney('bank', tonumber(amountt))
-				zPlayer.showNotification("You've received a bank transfer of "..amountt.."$ from the ID: ".._source)
-				xPlayer.showNotification("You've sent a bank transfer of "..amountt.."$ to the ID: "..to)
+				zPlayer.showNotification("Vous avez reçu un virement de  "..amountt.."$ par l'ID: ".._source)
+				xPlayer.showNotification("Vous avez envoyé un virement de "..amountt.."$ à l'ID: "..to)
 			end
 		end
 	else
-		TriggerClientEvent('chatMessage', _source, "That Wallet ID is not valid or doesn't exist")
+		TriggerClientEvent('chatMessage', _source, "Cet ID n'est pas valide !")
 	end
 end)
