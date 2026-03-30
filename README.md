@@ -45,7 +45,7 @@ You are not allowed to sell this script, or claim it's yours. Feel free to open 
  
 ## Contact
 
-VisiBait - [@visibait](https://twitter.com/visibait) - grafoplays@gmail.com
+VisiBait - [@visibait](https://twitter.com/visibait) - hola@visibait.com
 
 Script link: [https://github.com/visibait/vb-banking](https://github.com/visibait/vb-banking)
 
